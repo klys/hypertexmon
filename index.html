@@ -1,4 +1,4 @@
-<script src= "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src= "jquery-3.4.1.min.js"></script>
 <style>
     .character{
         background-image: url('chardown.png');
@@ -13,7 +13,7 @@
 
 <script>
     //$(document).ready(function(){
-        console.log("testing...")
+        //console.log("testing...")
         $(document).keypress(function(event){
             //console.log(event.keyCode)
             switch(event.keyCode) {
@@ -28,12 +28,12 @@
                     $(".character").css("background-image", "url('chardown.png')")
                     break;
                 case 100:
-                    console.log("D")
+                    //console.log("D")
                     $(".character").css("left", parseInt($(".character").css("left"))+1+"px")
                     $(".character").css("background-image", "url('charright.png')")
                     break;
                 case 97:
-                    console.log("A")
+                    //console.log("A")
                     $(".character").css("left", parseInt($(".character").css("left"))-1+"px")
                     $(".character").css("background-image", "url('charleft.png')")
                     break;
